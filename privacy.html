@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="escuro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12141a">
+<title>Política de Privacidade — RitmoLab</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/estilo.css">
+<style>
+  .privacy-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    color: var(--texto);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  .privacy-page h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: var(--acento);
+  }
+  .privacy-page .subtitle {
+    color: var(--texto-fraco);
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+  }
+  .privacy-page h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--texto);
+    margin-top: 2.25rem;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--borda);
+  }
+  .privacy-page p,
+  .privacy-page ul {
+    color: var(--texto-fraco);
+    margin-bottom: 0.75rem;
+  }
+  .privacy-page ul {
+    padding-left: 1.25rem;
+  }
+  .privacy-page ul li {
+    margin-bottom: 0.35rem;
+  }
+  .privacy-page strong {
+    color: var(--texto);
+  }
+  .privacy-page a {
+    color: var(--acento);
+    text-decoration: none;
+  }
+  .privacy-page a:hover {
+    text-decoration: underline;
+  }
+  .chip {
+    display: inline-block;
+    background: rgba(74, 201, 126, 0.12);
+    color: var(--verde);
+    border: 1px solid rgba(74, 201, 126, 0.25);
+    border-radius: 99px;
+    padding: 0.15rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--acento);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+  }
+  .back-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="cabecalho">
+  <div class="marca">
+    <img class="cabecinha-area cabecinha" src="assets/logo.svg" alt="RitmoLab">
+    <div class="marca-txt">
+      <h1 class="logo">RitmoLab</h1>
+    </div>
+  </div>
+  <button class="btn-icone" onclick="toggleTema()" title="Alternar tema">◐</button>
+</header>
+
+<main>
+  <div class="privacy-page">
+    <a class="back-link" href="/">&#8592; Voltar ao app</a>
+
+    <h1>Política de Privacidade <span class="chip">Sem coleta de dados</span></h1>
+    <p class="subtitle">
+      Última atualização: agosto de 2025 &nbsp;·&nbsp;
+      Pacote Android: <code>com.ritmolab.app</code>
+    </p>
+
+    <p>
+      O <strong>RitmoLab</strong> foi criado com privacidade como princípio fundamental.
+      Este documento descreve de forma transparente quais informações o aplicativo acessa,
+      como elas são tratadas e quais são os seus direitos.
+    </p>
+
+    <h2>1. Quem somos</h2>
+    <p>
+      O RitmoLab é um aplicativo independente desenvolvido por <strong>Vinicius DL</strong>.
+      Para dúvidas sobre esta política, entre em contato pelo e-mail disponível na página
+      do aplicativo na Google Play Store.
+    </p>
+
+    <h2>2. Dados pessoais coletados</h2>
+    <p>
+      <strong>O RitmoLab não coleta, transmite, vende nem compartilha nenhum dado pessoal
+      com terceiros.</strong> Não existe cadastro, login, conta de usuário ou servidor
+      back-end. Toda informação gerada pelo uso do app fica exclusivamente no seu dispositivo.
+    </p>
+    <p>Os únicos dados armazenados, sempre localmente via <code>localStorage</code>, são:</p>
+    <ul>
+      <li><strong>Apelido</strong> — nome opcional digitado pelo próprio usuário (até 24 caracteres), usado apenas para personalizar a interface.</li>
+      <li><strong>Progresso de estudo</strong> — notas, BPMs praticados, streak de dias, favoritos e histórico das últimas avaliações de timing.</li>
+      <li><strong>Preferências</strong> — tema de cores, timbre de caixa, método de entrada (microfone ou MIDI) e configurações de calibração.</li>
+    </ul>
+    <p>
+      Esses dados existem apenas no seu aparelho. Você pode apagá-los a qualquer momento
+      nas configurações do app ou limpando os dados do aplicativo nas configurações do
+      Android.
+    </p>
+
+    <h2>3. Permissão de microfone</h2>
+    <p>
+      O app pode solicitar acesso ao microfone quando você usa o <strong>modo de avaliação
+      por microfone</strong>. Esta permissão é usada exclusivamente para detectar o instante
+      exato das suas batidas no instrumento e calcular o seu timing em relação ao metrônomo.
+    </p>
+    <ul>
+      <li>O áudio <strong>não é gravado</strong>.</li>
+      <li>O áudio <strong>não é armazenado</strong> no dispositivo nem em nenhum servidor.</li>
+      <li>O áudio <strong>não é enviado</strong> para nenhum lugar — ele passa pelo detector
+          de batida em tempo real e é imediatamente descartado.</li>
+      <li>A permissão é solicitada somente no momento em que você ativa o modo microfone e
+          pode ser revogada a qualquer momento nas configurações do Android.</li>
+    </ul>
+
+    <h2>4. Permissão de MIDI</h2>
+    <p>
+      Se você usar um controlador MIDI conectado via USB OTG, o app solicita acesso à
+      <strong>Web MIDI API</strong>. Somente os timestamps das notas MIDI tocadas são
+      lidos para cálculo do timing. Nenhum dado MIDI é salvo ou transmitido.
+    </p>
+
+    <h2>5. Notificações</h2>
+    <p>
+      O aplicativo Android declara suporte a notificações na plataforma, mas atualmente
+      <strong>não envia nenhuma notificação push</strong>. Nenhum servidor de notificações
+      é utilizado. Caso notificações locais sejam implementadas em versões futuras, esta
+      política será atualizada.
+    </p>
+
+    <h2>6. Analytics e rastreamento</h2>
+    <p>
+      O RitmoLab <strong>não utiliza nenhuma ferramenta de analytics</strong> (Google Analytics,
+      Firebase, Mixpanel, Meta Pixel ou similares). Não há rastreamento de comportamento,
+      coleta de dados de uso, impressões de tela ou qualquer forma de telemetria enviada
+      a terceiros.
+    </p>
+
+    <h2>7. Publicidade</h2>
+    <p>
+      O app é completamente gratuito e <strong>não exibe anúncios</strong>. Nenhum SDK
+      de publicidade está integrado.
+    </p>
+
+    <h2>8. Compras e pagamentos</h2>
+    <p>
+      O RitmoLab <strong>não realiza cobranças nem oferece compras dentro do aplicativo</strong>.
+      Nenhum dado financeiro é processado ou armazenado.
+    </p>
+
+    <h2>9. Dados de menores de idade</h2>
+    <p>
+      O RitmoLab não coleta dados de nenhuma pessoa, incluindo menores de idade.
+      O app é adequado para uso por qualquer faixa etária.
+    </p>
+
+    <h2>10. Compartilhamento com terceiros</h2>
+    <p>
+      Como nenhum dado é coletado ou transmitido, <strong>não há compartilhamento de
+      dados com terceiros</strong> de qualquer natureza.
+    </p>
+
+    <h2>11. Segurança</h2>
+    <p>
+      Os dados de progresso ficam no armazenamento local do seu dispositivo, protegidos
+      pelas políticas de segurança do Android. O app não faz requisições a servidores
+      externos durante o uso normal.
+    </p>
+
+    <h2>12. Seus direitos</h2>
+    <p>
+      Como todos os seus dados ficam exclusivamente no seu dispositivo, você tem
+      controle total sobre eles:
+    </p>
+    <ul>
+      <li><strong>Acessar:</strong> os dados são visíveis nas telas de progresso do próprio app.</li>
+      <li><strong>Apagar:</strong> vá em Configurações do Android &gt; Apps &gt; RitmoLab &gt; Armazenamento &gt; Limpar dados.</li>
+      <li><strong>Portabilidade:</strong> não aplicável, pois nenhum dado é armazenado remotamente.</li>
+    </ul>
+
+    <h2>13. Alterações nesta política</h2>
+    <p>
+      Caso esta política seja alterada, a nova versão será publicada nesta mesma URL com
+      a data de atualização revisada. Alterações significativas serão comunicadas na
+      descrição do app na Google Play Store.
+    </p>
+
+    <h2>14. Contato</h2>
+    <p>
+      Dúvidas sobre esta política de privacidade podem ser enviadas pelo e-mail de contato
+      disponível na página do <strong>RitmoLab</strong> na
+      <a href="https://play.google.com/store/apps/details?id=com.ritmolab.app" target="_blank" rel="noopener">
+        Google Play Store
+      </a>.
+    </p>
+  </div>
+</main>
+
+<script>
+  function toggleTema() {
+    const html = document.documentElement;
+    html.dataset.tema = html.dataset.tema === 'escuro' ? 'claro' : 'escuro';
+  }
+</script>
+
+</body>
+</html>
